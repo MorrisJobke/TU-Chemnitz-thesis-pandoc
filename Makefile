@@ -1,7 +1,7 @@
 .PHONY: test.pdf watch
 
 test.pdf: test.md
-	pandoc	--template=template/template \
+	pandoc	--template=template/template.tex \
 			--chapter \
 			test.md \
 			-o "build/test.pdf"

@@ -1,10 +1,10 @@
 \documentclass[
-	12pt,		% font size
-	a4paper,	% DIN A4
-	twoside,	% two sided
-	german,		%
-	openright,	% satz chapter on right side (odd page number)
- 	BCOR8mm,	% fix binding (here 8 mm)
+    12pt,       % font size
+    a4paper,    % DIN A4
+    twoside,    % two sided
+    german,     %
+    openright,  % satz chapter on right side (odd page number)
+    BCOR8mm,    % fix binding (here 8 mm)
 ]{scrreprt}
 
 
@@ -12,11 +12,11 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{
-	ngerman,	% new german orthography
-	bibgerm,	% german bibliography
-	graphicx,
-	ae,			% handling german umlauts for search and copy in PDF
-	aecompl,	% handling german umlauts for search and copy in PDF
+    ngerman,    % new german orthography
+    bibgerm,    % german bibliography
+    graphicx,
+    ae,         % handling german umlauts for search and copy in PDF
+    aecompl,    % handling german umlauts for search and copy in PDF
 }
 
 \setcounter{tocdepth}{3}
@@ -29,15 +29,15 @@
 
 % title page
 \titlehead{
-	\begin{picture}(167, 26)(0, -26)
-		\makebox(0, 20)[lt]{
-			\includegraphics[width=55mm]{$headergraphic$}
-			\hspace*{10mm}
-		}
-		\put(160, -70){\makebox(0, 26)[b]{\vrule width 0.75pt height 26mm}}
-		\put(180, -10){\fontsize{14}{19}\textsf {$faculty$}}
-		\put(180, -30){\fontsize{12}{18}\textsf {$professorship$}}
-	\end{picture}
+    \begin{picture}(167, 26)(0, -26)
+        \makebox(0, 20)[lt]{
+            \includegraphics[width=55mm]{$headergraphic$}
+            \hspace*{10mm}
+        }
+        \put(160, -70){\makebox(0, 26)[b]{\vrule width 0.75pt height 26mm}}
+        \put(180, -10){\fontsize{14}{19}\textsf {$faculty$}}
+        \put(180, -30){\fontsize{12}{18}\textsf {$professorship$}}
+    \end{picture}
 
 }
 \subject{$heading$}
@@ -45,15 +45,15 @@
 \author{$author$}
 \date{\small $date$}
 \publishers{
-	{\parbox{\textwidth}{
-		\normalsize
-		\begin{tabbing}
-			{\bf TEMPLATE}\quad\=\kill % line to specify tabs
-			$for(attributes)$
-				{\bf $attributes.name$}	\>$attributes.value$\\
-			$endfor$
-		\end{tabbing}
-	}}
+    {\parbox{\textwidth}{
+        \normalsize
+        \begin{tabbing}
+            {\bf TEMPLATE}\quad\=\kill % line to specify tabs
+            $for(attributes)$
+                {\bf $attributes.name$} \>$attributes.value$\\
+            $endfor$
+        \end{tabbing}
+    }}
 }
 
 

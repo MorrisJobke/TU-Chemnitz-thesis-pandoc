@@ -73,6 +73,15 @@ $if(abstract)$
 \end{abstract}
 $endif$
 
+% set numbering to roman
+\pagenumbering{roman}
+
 \tableofcontents
+\clearpage
+
+% reset to arabic numbering
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 $body$
 \end{document}

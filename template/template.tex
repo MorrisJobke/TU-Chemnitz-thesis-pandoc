@@ -17,6 +17,10 @@
     graphicx,
     ae,         % handling german umlauts for search and copy in PDF
     aecompl,    % handling german umlauts for search and copy in PDF
+$if(tables)$
+    longtable,  % handling tables with pandoc
+    booktabs,   % handling tables with pandoc
+$endif$
 }
 
 \setcounter{tocdepth}{3}

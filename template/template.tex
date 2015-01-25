@@ -3,7 +3,9 @@
     a4paper,    % DIN A4
     twoside,    % two sided
     german,     %
-    openright,  % satz chapter on right side (odd page number)
+$if(openright)$
+    openright,  % chapter on right side (odd page number)
+$endif$
     BCOR8mm,    % fix binding (here 8 mm)
 ]{scrreprt}
 

@@ -24,9 +24,10 @@ $if(tables)$
     longtable,  % handling tables with pandoc
     booktabs,   % handling tables with pandoc
 $endif$
+    listings,   % handling listings with pandoc
 }
 
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 
 % avoids alone lines on end or start of new page
 \clubpenalty10000
@@ -78,6 +79,9 @@ $endif$
 \pagenumbering{roman}
 
 \tableofcontents
+\listoftables
+\listoffigures
+\lstlistoflistings
 \clearpage
 
 % reset to arabic numbering

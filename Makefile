@@ -3,6 +3,7 @@
 test.pdf: test.md
 	pandoc	--template=template/template.tex \
 			--filter pandoc-citeproc \
+			--listings \
 			--chapter \
 			test.md \
 			bibliography.md \
